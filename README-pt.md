@@ -21,6 +21,15 @@ seção "Erros comuns".
 Você deve possuir GNU Parallel, samtools, bcftools, e vcfutils no seu PATH.
 Consulte o manual dessas ferramentas para realizar sua instalação.
 
+## Docker
+
+Para obter a imagem basta usar [pull](https://docs.docker.com/engine/reference/commandline/pull/). Para não precisar copiar os dados para dentro da imagem docker, utilize [volumes](https://docs.docker.com/storage/volumes/) ou [bind mounts](https://docs.docker.com/storage/bind-mounts/). Por exemplo, se seus dados estão em `/DATA`, você pode obter a imagem e usar bind mounts da seguinte forma:
+
+```
+docker pull afarah1/ubuntu-samtools
+docker run -it --mount type=bind,source=/DATA,target=/DATA afarah1/ubuntu-samtools
+```
+
 # Uso
 
 `parsnv [opções] lista`
