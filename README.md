@@ -7,7 +7,7 @@ Once all dependencies have been met, download and make the parsnv file
 executable.
 
 ```
-wget https://github.com/afarah1/parsnv/blob/main/parsnv && chmod +x parsnv
+wget https://raw.githubusercontent.com/afarah1/parsnv/main/parsnv && chmod +x parsnv
 ```
 
 ## Dependencies
