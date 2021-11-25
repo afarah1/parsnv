@@ -9,7 +9,7 @@ fornece um ambiente pronto para execução do programa. Nela, basta baixar o
 arquivo parsnv desse repositório e torná-lo executável:
 
 ```
-wget https://github.com/afarah1/parsnv/blob/main/parsnv && chmod +x parsnv
+wget https://raw.githubusercontent.com/afarah1/parsnv/main/parsnv && chmod +x parsnv
 ```
 
 Caso você não queira ou não possa usar docker, certifique-se de que as
