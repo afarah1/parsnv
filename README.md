@@ -1,13 +1,19 @@
 Runs a parallel SNV calling pipeline using samtools, bcftools, and vcftools,
 aiming for low memory usage.
 
-# Dependencies
+# Installation
+
+Once all dependencies have been met, download and make the parsnv file 
+executable.
+
+```
+wget https://github.com/afarah1/parsnv/blob/main/parsnv && chmod +x parsnv
+```
+
+## Dependencies
 
 You should have GNU Parallel, samtools, bcftools, and vcfutils all in your
 PATH. [This docker image](https://hub.docker.com/repository/docker/afarah1/ubuntu-samtools) has everything pre-installed.
-
-Once all dependencies have been met, just download the `parsnv` file and
-execute it following the instructions below.
 
 # Usage
 
@@ -199,3 +205,4 @@ BCF ANNOTATE
 BCF VIEW
 VCF FILTER
 ```
+****
